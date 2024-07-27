@@ -58,7 +58,15 @@
 [<a href="https://www.zhihu.com/people/zhong-xin-liang-64" target="_blank">Youtube</a>]
 [<a href="https://www.zhihu.com/people/zhong-xin-liang-64" target="_blank">知乎</a>]
 [<a href="https://space.bilibili.com/91309664" target="_blank">Bilibili</a>]
-<h2>Projects after 2019</h2>
+
+<h1>2023-至今</h1>
+<h2>硬件在环（HIL）的软硬一体链路实现以及基于HIL的智驾参考实现</h2>
+
+<h2>逼真的仿真数据生成用于训练数据的生成以及智驾corner case生成</h2>
+
+<h1>2020-2023</h1>
+
+<h2>单目视觉在基于已知地图的视觉定位工作</h2>
 A general framework for <strong><a href="https://github.com/TurtleZhong/Map-based-Visual-Localization">map-based visual localization.</a></strong> It contains:</br>
 <br/>
 1) Map Generation which support traditional features or deeplearning features.</br>
@@ -73,8 +81,6 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
 [<a href="https://www.bilibili.com/video/BV1M54y1r7gz" target="_blank">Related Video_1</a>]
 </p>
 
-<h2>单目视觉在基于已知地图的视觉定位工作</h2>
-
 <h2>多机器人纯自主探索主动式协作快速建图</h2>
 
 <h2>AVP-SLAM 自主代客泊车视觉定位方案</h2>
@@ -82,6 +88,17 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
 <h2>LVIO-SAM 基于因子图的雷达视觉惯性紧耦合里程计</h2>
 
 <h2>RF-LIO 基于视点可见性的动态物体在线移除LIO方法</h2>
+基本原理：基于range image的方法将submap和当前激光投影到image，根据深度差判断该点是否为动态点。</br>
+1.定位结果量化对比</br>
+【TODO】</br>
+2.建图效果与lio-sam对比，注意地图中的动态车辆拖影</br>
+<body>
+  <div class="image-container">
+      <img src="./img/rf-lio-results1.png" alt="">
+      <img src="./img/rf-lio-results2.png" alt="">
+  </div>
+</body>
+详细方法参考原始论文<a href="https://ieeexplore.ieee.org/document/9636624" target="_blank">RF-LIO: Removal-First Tightly-coupled Lidar Inertial Odometry in High Dynamic Environments</a></br>
 
 <h2>洞穴自主探索与返回机器人</h2>
 1.设计了基于图结构的分层自主探索与返回方案，并结合高程地图计算机器人的局部可通行性地图，使机器人能够在崎岖环境下安全的纯自主探索与采样返回，方案最终在莫干山洞穴进行了大量测试并得以验证</br>
@@ -110,6 +127,8 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
       <img src="./img/cave-husky-exploration.gif" alt="">
   </div>
 </body>
+
+<h1>2019-2020</h1>
 
 <h2>基于纯视觉的低成本XX无人物流车方案</h2>
 1) 纯视觉定位方案，包含离线建图以及在线定位两大部分.</br>
