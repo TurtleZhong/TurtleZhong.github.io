@@ -73,14 +73,48 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
 [<a href="https://www.bilibili.com/video/BV1M54y1r7gz" target="_blank">Related Video_1</a>]
 </p>
 
+<h2>单目视觉在基于已知地图的视觉定位工作</h2>
+
+<h2>多机器人纯自主探索主动式协作快速建图</h2>
+
+<h2>AVP-SLAM 自主代客泊车视觉定位方案</h2>
+
+<h2>LVIO-SAM 基于因子图的雷达视觉惯性紧耦合里程计</h2>
+
+<h2>RF-LIO 基于视点可见性的动态物体在线移除LIO方法</h2>
+
+<h2>洞穴自主探索与返回机器人</h2>
+1.设计了基于图结构的分层自主探索与返回方案，并结合高程地图计算机器人的局部可通行性地图，使机器人能够在崎岖环境下安全的纯自主探索与采样返回，方案最终在莫干山洞穴进行了大量测试并得以验证</br>
+2.<a href="https://mp.weixin.qq.com/s/NUBClkn1g_h-wk0ETm9u4w" target="_blank">机器人青科论坛之导航专场分享</a>《面向地外探测的机器人定位建图与自主探索技术研究》，直播在线观看人数5k+</br>
+
 <h2>基于纯视觉的低成本XX无人物流车方案</h2>
 1) 纯视觉定位方案，包含离线建图以及在线定位两大部分.</br>
 2) 基于3D点地图的兼容传统与深度特征点描述子的后端重定位框架，平均定位误差95%以上处于30cm以内.</br>
 3) 融合单目鱼眼摄像头的语义分割，检测，深度摄像头的深度信息，超声波信息和IMU信息的感知bev的costmap用于规控.</br>
-<div align="center">
-  <img width="320" height="240" src="./img/et-robot.jpeg" alt="">
-  <img width="320" height="240" src="./img/et-robot-loc-perception.gif" alt="">
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图像布局</title>
+  <style>
+      .image-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+      .image-container img {
+        width: calc(50% - 2%); /* 每个图像占据48%，减去间距 */
+            height: auto; /* 高度自适应 */
+            aspect-ratio: 3 / 2; /* 保持3:2的比例 */
+            margin: 1%; /* 添加一些间距 */
+      }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+      <img src="./img/et-robot.jpeg" alt="">
+      <img src="./img/et-robot-loc-perception.gif" alt="">
+  </div>
+</body>
 
 
 <body>
