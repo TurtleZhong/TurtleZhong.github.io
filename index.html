@@ -86,6 +86,30 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
 <h2>洞穴自主探索与返回机器人</h2>
 1.设计了基于图结构的分层自主探索与返回方案，并结合高程地图计算机器人的局部可通行性地图，使机器人能够在崎岖环境下安全的纯自主探索与采样返回，方案最终在莫干山洞穴进行了大量测试并得以验证</br>
 2.<a href="https://mp.weixin.qq.com/s/NUBClkn1g_h-wk0ETm9u4w" target="_blank">机器人青科论坛之导航专场分享</a>《面向地外探测的机器人定位建图与自主探索技术研究》，直播在线观看人数5k+</br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图像布局</title>
+  <style>
+      .image-container {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+      }
+      .image-container img {
+        width: calc(50% - 2%); /* 每个图像占据48%，减去间距 */
+            height: auto; /* 高度自适应 */
+            aspect-ratio: 16 / 9; /* 保持3:2的比例 */
+            margin: 1%; /* 添加一些间距 */
+      }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+      <img src="./img/cave-moganshan.gif" alt="">
+      <img src="./img/cave-husky-exploration.gif" alt="">
+  </div>
+</body>
 
 <h2>基于纯视觉的低成本XX无人物流车方案</h2>
 1) 纯视觉定位方案，包含离线建图以及在线定位两大部分.</br>
