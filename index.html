@@ -84,13 +84,44 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
 <h2>多机器人纯自主探索主动式协作快速建图</h2>
 
 <h2>AVP-SLAM 自主代客泊车视觉定位方案</h2>
+对论文[<a href="https://arxiv.org/abs/2007.01813" target="_blank">AVP-SLAM: Semantic Visual Mapping and Localization for Autonomous Vehicles in the Parking Lot(IROS 2020)</a>]的复现，并将整个Gazebo仿真器开源。</br>
+[<a href="https://zhuanlan.zhihu.com/p/345815437" target="_blank">知乎介绍</a>]
+[<a href="https://github.com/TurtleZhong/AVP-SLAM-SIM" target="_blank">Code</a>]
+<body>
+  <div class="image-container">
+    <img src="./img/avp-slam-pipeline.png" alt="">
+      <img src="./img/avp-slam-demo1.gif" alt="">
+  </div>
+</body>
 
 <h2>LVIO-SAM 基于因子图的雷达视觉惯性紧耦合里程计</h2>
 
+[<a href="https://github.com/TurtleZhong/LVIO-SAM" target="_blank">Code</a>]
+
+<body>
+  <div class="image-container">
+      <img src="./img/lvio-slam-structure.png" alt="">
+      <img src="./img/lvio-slam-sim-env.png" alt="">
+  </div>
+</body>
+
+实际效果图</br>
+<body>
+  <div class="image-container">
+      <img src="./img/lvio-sam-kitti.gif" alt="">
+      <img src="./img/lvio-sam-cmu.gif" alt="">
+  </div>
+</body>
+
 <h2>RF-LIO 基于视点可见性的动态物体在线移除LIO方法</h2>
 基本原理：基于range image的方法将submap和当前激光投影到image，根据深度差判断该点是否为动态点。</br>
-1.定位结果量化对比</br>
-【TODO】</br>
+1.基本框架与定位结果量化对比</br>
+<body>
+  <div class="image-container">
+      <img src="./img/rf-lio-strucutr.jpeg" alt="">
+      <img src="./img/rf-lio-compare1.jpeg" alt="">
+  </div>
+</body>
 2.建图效果与lio-sam对比，注意地图中的动态车辆拖影</br>
 <body>
   <div class="image-container">
