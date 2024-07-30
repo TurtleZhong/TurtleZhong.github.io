@@ -61,17 +61,51 @@
 
 <h1>2023-至今</h1>
 <h2>硬件在环（HIL）的软硬一体链路实现以及基于HIL的智驾参考实现</h2>
+1）围绕CARLA仿真器，自研数据注入设备以及域控，实现了仿真器-数据注入设备-域控-底盘-仿真器闭环，搭建了相应的HIL台架，将真实硬件设备接入仿真数据进行上车部署前的测试，加速各个链路验证以及算法的迭代落地</br>
+2）编写UE4的着色器使CARLA支持鱼眼相机，整套系统支持1V1R的入门级LKA仿真以及4V的APA泊车仿真</br>
+3）CARLA仿真器支持了不同实车底盘can协议</br>
+4）基于整套系统开发了LKA/APA参考实现，并在实车上进行了验证</br>
+5）...
+
+
+<body>
+  <div class="image-container">
+      <img src="./img/hil-whole-picture.png" alt=""> 
+      <img src="./img/fisheye4v_undistort.gif" alt="鱼眼镜头图像">  
+  </div>
+</body>
+
+
 
 <h2>逼真的仿真数据生成用于训练数据的生成以及智驾corner case生成</h2>
+
+
+1）可以添加如下车辆、定义车辆的基本运动方式，也可以让自车运动起来，当然也可以生成一些corner case，例如圆锥桶在地面 </br>
+2）注意光影细节、同时可以生成天气变化、白天黑夜的图像</br>
+2） 更多细节请电话/邮件联系，个人网页只放最基础的demo</br>
+
+<body>
+  <div class="image-container">
+    <img src="./img/data-generation-static-liauto.png" alt="">
+      <img src="./img/data-generation-static-telsa-mini.png" alt="">
+  </div>
+</body>
+
+<body>
+  <div class="image-container">
+    <img src="./img/data-generation-demo-liauto-rotation.gif" alt="">
+      <img src="./img/data-generation-demo-liauto-movement.gif" alt="">
+  </div>
+</body>
 
 <h1>2020-2023</h1>
 
 <h2>单目视觉在基于已知地图的视觉定位工作</h2>
-A general framework for <strong><a href="https://github.com/TurtleZhong/Map-based-Visual-Localization">map-based visual localization.</a></strong> It contains:</br>
+一个通用的 <strong><a href="https://github.com/TurtleZhong/Map-based-Visual-Localization">基于视觉地图的定位系统.</a></strong> 它包括:</br>
 <br/>
-1) Map Generation which support traditional features or deeplearning features.</br>
-2) Hierarchical-Localizationvisual in visual(points or line) map.</br>
-3) Fusion framework with IMU, wheel odom and GPS sensors.</br>
+1) 支持传统与深度学习特征的地图创建.</br>
+2) 分层定位模块.</br>
+3) 支持融合轮速、IMU、GNSS平滑.</br>
 <p>
 [<a href="https://github.com/TurtleZhong/Map-based-Visual-Localization" target="_blank">Project page</a>]
 [<a href="https://github.com/TurtleZhong/camera_lidar_calibration" target="_blank">ZhiHu</a>]
@@ -81,7 +115,16 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
 [<a href="https://www.bilibili.com/video/BV1M54y1r7gz" target="_blank">Related Video_1</a>]
 </p>
 
+<body>
+  <div class="image-container">
+    <img src="./img/mono-loc-kitti.gif" alt="">
+      <img src="./img/mono-loc-office.gif" alt="">
+  </div>
+</body>
+
 <h2>多机器人纯自主探索主动式协作快速建图</h2>
+
+1）主要是多个机器人基于frontier探索点的方式进行快速地图构建与合并
 
 <h2>AVP-SLAM 自主代客泊车视觉定位方案</h2>
 对论文[<a href="https://arxiv.org/abs/2007.01813" target="_blank">AVP-SLAM: Semantic Visual Mapping and Localization for Autonomous Vehicles in the Parking Lot(IROS 2020)</a>]的复现，并将整个Gazebo仿真器开源。</br>
@@ -130,6 +173,14 @@ A general framework for <strong><a href="https://github.com/TurtleZhong/Map-base
   </div>
 </body>
 详细方法参考原始论文<a href="https://ieeexplore.ieee.org/document/9636624" target="_blank">RF-LIO: Removal-First Tightly-coupled Lidar Inertial Odometry in High Dynamic Environments</a></br>
+
+<h2>基于打滑估计方法的纹理稀疏场景定位</h2>
+
+<body>
+  <div class="image-container1" style="text-align: center;"> <!-- 使用内联样式水平居中 -->
+      <img src="./img/vio-explain-2.png" alt="" width="90%" height="auto"> <!-- 设置宽度为80%，高度自适应 -->
+  </div>
+</body>
 
 <h2>洞穴自主探索与返回机器人</h2>
 1.设计了基于图结构的分层自主探索与返回方案，并结合高程地图计算机器人的局部可通行性地图，使机器人能够在崎岖环境下安全的纯自主探索与采样返回，方案最终在莫干山洞穴进行了大量测试并得以验证</br>
