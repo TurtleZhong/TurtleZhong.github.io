@@ -59,6 +59,33 @@
 [<a href="https://www.zhihu.com/people/zhong-xin-liang-64" target="_blank">知乎</a>]
 [<a href="https://space.bilibili.com/91309664" target="_blank">Bilibili</a>]
 
+<body>
+<div class="container">
+    <h2>工作经验</h2>
+    <p id="experience result"></p>
+</div>
+<script>
+    function calculateDateDifference(startDate) {
+        const currentDate = new Date();
+        const start = new Date(startDate);
+        let years = currentDate.getFullYear() - start.getFullYear();
+        let months = currentDate.getMonth() - start.getMonth()+1;
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+        return { years: years, months: months };
+    }
+    function displayDateDifference() {
+        const dateA = '2019-07-01';  // 初始日期A
+        const difference = calculateDateDifference(dateA);
+        document.getElementById('experience result').textContent = 
+            `打工人已经在社会上混了${difference.years}年${difference.months}个月。`;
+    }
+    displayDateDifference();
+</script>
+</body>
+
 <h1>2023-至今</h1>
 <h2>硬件在环（HIL）的软硬一体链路实现以及基于HIL的智驾参考实现</h2>
 1）围绕CARLA仿真器，自研数据注入设备以及域控，实现了仿真器-数据注入设备-域控-底盘-仿真器闭环，搭建了相应的HIL台架，将真实硬件设备接入仿真数据进行上车部署前的测试，加速各个链路验证以及算法的迭代落地</br>
